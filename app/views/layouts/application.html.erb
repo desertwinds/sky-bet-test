@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <title>SkyBetTest</title>
+    <title>Sky Bet Test</title>
     <%= csrf_meta_tags %>
 
     <%= stylesheet_link_tag    'application', media: 'all' %>
@@ -9,6 +9,10 @@
   </head>
 
   <body>
-    <%= yield %>
+    <%= render :partial => '/layouts/partials/notices' %>
+    <div class="container">
+      <%= yield %>
+    </div>
+    
   </body>
 </html>
